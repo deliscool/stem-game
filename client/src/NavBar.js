@@ -9,7 +9,7 @@ function NavBar() {
         <nav>
             <Link to="/">Home</Link>
             <Link to="/game">Game</Link>
-            <Link to="/player">Player</Link>
+            <Link to="/learn">Learn</Link>
         </nav>
     );
 }

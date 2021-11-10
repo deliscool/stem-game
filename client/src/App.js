@@ -1,9 +1,9 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
 // // import axios from "axios"
-import Resources from "./Resources"
+import Home from "./Home"
 import Game from "./Game"
-import Player from "./Player"
+import Learn from "./Learn"
 import NavBar from "./NavBar"
 
 
@@ -20,15 +20,15 @@ function App() {
       <Switch>
 
         <Route exact path="/">
-          <Resources />
+          <Home />
         </Route>
 
         <Route path="/game">
           <Game />
         </Route>
 
-        <Route path="/player">
-          <Player />
+        <Route path="/learn">
+          <Learn />
 
         </Route>
 
