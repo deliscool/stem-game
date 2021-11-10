@@ -5,7 +5,7 @@ function Resources() {
     return (
         <div>
 
-            <p>Hey, I'm the Resources component!</p>
+            <p>Hey, I'm the Home/Resources component!</p>
 
         </div>
     );
