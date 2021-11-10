@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function Resources() {
+function Home() {
     return (
         <div>
 
@@ -11,4 +11,4 @@ function Resources() {
     );
 }
 
-export default Resources;
+export default Home;
