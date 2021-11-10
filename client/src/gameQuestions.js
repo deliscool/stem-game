@@ -1,4 +1,4 @@
-const gameQuestions = [
+const gameData = [
     {
         _id: 1,
         category: "Math",
