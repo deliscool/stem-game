@@ -5,7 +5,7 @@ body {
 }
 
 button {
-      width: 250px;
+      width: 280px;
       background-color: royalblue;
       color: white;
       text-align: center;
@@ -13,7 +13,19 @@ button {
       border-radius: 8px;
 }
 
-.question-text {
-      width: 500px;
+button:hover {
+      background-color:  yellowgreen;
+      color: black;
 }
 
+.question-text {
+      width: 500px;
+      background-color: #88D1F1;
+      border-radius: 8px;
+      border:  3px solid navy;
+      margin-top: 18px;
+}
+
+.category-title {
+font-weight: bold;
+}

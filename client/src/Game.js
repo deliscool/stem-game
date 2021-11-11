@@ -22,10 +22,11 @@ return (
              <div>STATS</div>
          </div>
 
-               
+         
             {gameData.map((game, index)=>(
+          
                 <div className="question-text" key={game._id} index={index}>
-                    <h3>{game.category}</h3>
+                    <h3 className="category-title">{game.category}</h3>
                     <h3>{game.question}</h3>
     
                 {game.options.map((option, index)=>(
@@ -33,8 +34,10 @@ return (
                         <button>{option.answer}</button>
                         <h3>{option.isCorrect}</h3>
                     </div>
+                   
                 ))}
         </div>
+
         ))}
     </div>
 )}
