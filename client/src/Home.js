@@ -1,5 +1,5 @@
 import React from "react"
-import Info from "./images/forest.jpeg"
+// import Info from "./images/forest.jpeg"
 
 
 function Home() {

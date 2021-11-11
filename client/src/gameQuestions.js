@@ -251,3 +251,4 @@ const gameQuestions = [
         ]
     }
 ]
+export default gameQuestions;

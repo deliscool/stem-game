@@ -1,10 +1,10 @@
 import React from "react"
 
-function QuestionCard() {
+function QuestionCard(props) {
 
     return(
         <div>
-            <p>Question Card!</p>
+            <p>{props.question}</p>
         </div>
     )
 }
