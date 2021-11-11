@@ -1,13 +1,11 @@
 import React from "react"
-// import Info from "./images/forest.jpeg"
+import HomeImg from "./images/1.png"
 
 
 function Home() {
     return (
-        <div>
-
-            <p>Hey, I'm the Home component!</p>
-
+        <div className="home-images">
+            <img src={HomeImg} alt="problem and solution"></img>
         </div>
     );
 }
