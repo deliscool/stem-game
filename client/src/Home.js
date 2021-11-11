@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
 
-            <p>Hey, I'm the Home/Resources component!</p>
+            <p>Hey, I'm the Home component!</p>
 
         </div>
     );
