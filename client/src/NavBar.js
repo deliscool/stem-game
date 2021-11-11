@@ -1,16 +1,21 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
+import Logo from "./images/women in stem.png"
 
 
 
 function NavBar() {
     return (
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/game">Game</Link>
-            <Link to="/learn">Learn</Link>
-        </nav>
+        <div className="nav-bar">
+             <img className="" src={Logo} alt=""></img>
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/learn">Learn</Link>
+                <Link to="/game">Play</Link>
+            </nav>
+        </div>
+       
     );
 }
 

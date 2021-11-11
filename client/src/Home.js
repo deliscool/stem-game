@@ -1,12 +1,11 @@
 import React from "react"
+import Info from "./images/forest.jpeg"
 
 
 function Home() {
     return (
         <div>
-
-            <p>Hey, I'm the Home/Resources component!</p>
-
+             <img className="" src={Info} alt="placeholder"></img>
         </div>
     );
 }

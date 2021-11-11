@@ -23,15 +23,13 @@ function App() {
           <Home />
         </Route>
 
+        <Route path="/learn">
+          <Learn />
+        </Route>
+
         <Route path="/game">
           <Game />
         </Route>
-
-        <Route path="/learn">
-          <Learn />
-
-        </Route>
-
       </Switch>
 
     </div>
