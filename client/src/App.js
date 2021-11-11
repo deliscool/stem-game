@@ -1,13 +1,12 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-// // import axios from "axios"
 import Home from "./Home"
 import Game from "./Game"
+import QuestionCard from "./QuestionCard"
 import Learn from "./Learn"
 import NavBar from "./NavBar"
 
 
-//NOTE:  in react-router-dom "Switch" has now changed to "Routes"
 
 function App() {
 
@@ -21,6 +20,11 @@ function App() {
 
         <Route exact path="/">
           <Home />
+        </Route>
+
+        <Route path="/game">
+          <Game />
+          <QuestionCard/>
         </Route>
 
         <Route path="/learn">

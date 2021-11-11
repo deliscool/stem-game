@@ -1,4 +1,4 @@
-export default [
+const gameQuestions = [
     {
         _id: 1,
         category: "Math",

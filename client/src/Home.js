@@ -5,7 +5,9 @@ import Info from "./images/forest.jpeg"
 function Home() {
     return (
         <div>
-             <img className="" src={Info} alt="placeholder"></img>
+
+            <p>Hey, I'm the Home component!</p>
+
         </div>
     );
 }
