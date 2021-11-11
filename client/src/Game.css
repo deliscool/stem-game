@@ -18,14 +18,27 @@ button:hover {
       color: black;
 }
 
+.game-card-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      /* grid-template-rows: 5; */
+      /* grid-auto-flow: column;  */
+      column-gap: 5px;
+      width: 150px;
+}
+
 .question-text {
-      width: 500px;
-      background-color: #88D1F1;
+      padding: 8px;
+      /* background-color: #88D1F1; */
+      background-image: linear-gradient(to bottom right, #83eaf1, #63a4ff);
       border-radius: 8px;
-      border:  3px solid navy;
+      border-top:  3px solid navy;
+      border-left: 3px solid navy;
+      border-right: 7px solid navy;
+      border-bottom: 10px solid navy;
       margin-top: 18px;
 }
 
 .category-title {
-font-weight: bold;
+      font-weight: bold;
 }

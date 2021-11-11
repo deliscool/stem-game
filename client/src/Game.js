@@ -7,10 +7,18 @@ import "./Game.css"
 
 function Game() {
 
+const handleClick = (index, option) => {
+        option.isCorrect === true 
+        ? 
+        alert("Stellar answer! That's correct!") 
+        : 
+        alert("Oh, nice try, but that's not the answer.")
+    }
+
 return (
 
      <div>
-         <div className="categories">
+         {/* <div className="categories">
              <div>S</div>
              
              <div>T</div>
@@ -20,25 +28,28 @@ return (
              <div>M</div>
 
              <div>STATS</div>
-         </div>
+         </div> */}
 
-         
+         <div className="game-card-container">
             {gameData.map((game, index)=>(
-          
+
                 <div className="question-text" key={game._id} index={index}>
                     <h3 className="category-title">{game.category}</h3>
-                    <h3>{game.question}</h3>
+                    <h3 id="question">{game.question}</h3>
     
                 {game.options.map((option, index)=>(
                     <div key={index} className="answer-btns">
-                        <button>{option.answer}</button>
-                        <h3>{option.isCorrect}</h3>
+                            <h3>{option.isCorrect}</h3>
+                        <button id={index} onClick={()=>handleClick(index, option)}>{option.answer}</button>
+                       
                     </div>
-                   
+            
                 ))}
         </div>
+     
 
         ))}
+           </div>
     </div>
 )}
 export default Game;
