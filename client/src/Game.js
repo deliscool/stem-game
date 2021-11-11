@@ -5,15 +5,25 @@ import gameData from "./gameQuestions"
 function Game() {
 
 return (
-    <div className="questions-here">
-        {gameData.map((game, index)=>
-            <div key={game._id} index={index}>
-               <h3>{game.question}</h3>
-            </div>
-        )}
+
+     <div>
+
+               
+            {gameData.map((game, index)=>(
+                <div key={game._id} index={index}>
+                    <h3>{game.category}</h3>
+                    <h3>{game.question}</h3>
+    
+                {game.options.map((option, index)=>(
+                    <div key={index}>
+                        <h3>{option.answer}</h3>
+                        <h3>{option.isCorrect}</h3>
+                    </div>
+                ))}
+        </div>
+        ))}
     </div>
 )}
-    
 export default Game;
 
 
@@ -21,10 +31,17 @@ export default Game;
 
 
 
-//THIS WORKED
+
+
+
+
+
+
+
+{/* THIS WORKED
     // <div>{gameData[0].question} </div>
             //<div>{gameData[0].category}</div>
-           // <div>{gameData[0].options[0].answer}</div>
+           // <div>{gameData[0].options[0].answer}</div>  */}
 
 
 
