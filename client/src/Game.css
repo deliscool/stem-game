@@ -4,3 +4,16 @@ body {
       font-family: "Raleway", sans-serif;
 }
 
+button {
+      width: 250px;
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      border-radius: 8px;
+}
+
+.question-text {
+      width: 500px;
+}
+

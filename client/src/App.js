@@ -8,6 +8,7 @@ import NavBar from "./NavBar"
 
 
 
+
 function App() {
 
   return (
@@ -24,7 +25,6 @@ function App() {
 
         <Route path="/game">
           <Game />
-          {/* <QuestionCard/> */}
         </Route>
 
         <Route path="/learn">
