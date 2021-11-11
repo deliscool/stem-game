@@ -2,7 +2,7 @@ import React from "react"
 import { Switch, Route } from "react-router-dom"
 import Home from "./Home"
 import Game from "./Game"
-import QuestionCard from "./QuestionCard"
+// import QuestionCard from "./QuestionCard"
 import Learn from "./Learn"
 import NavBar from "./NavBar"
 
@@ -24,7 +24,7 @@ function App() {
 
         <Route path="/game">
           <Game />
-          <QuestionCard/>
+          {/* <QuestionCard/> */}
         </Route>
 
         <Route path="/learn">
