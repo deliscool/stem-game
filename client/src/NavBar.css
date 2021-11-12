@@ -13,6 +13,7 @@ body {
   align-items: center;
   padding-right: 100px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .nav-bar img {
