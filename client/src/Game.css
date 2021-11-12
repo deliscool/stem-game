@@ -8,6 +8,7 @@ button {
       width: 280px;
       background-color: royalblue;
       color: white;
+      font-size: 15px;
       text-align: center;
       padding: 5px;
       border-radius: 8px;
@@ -16,25 +17,86 @@ button {
 button:hover {
       background-color:  yellowgreen;
       color: black;
+      font-weight: bold;
 }
 
 .game-card-container {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      /* grid-template-rows: 5; */
-      /* grid-auto-flow: column;  */
+      grid-template-columns: repeat(4, 1fr);
       column-gap: 7px;
-      width: 15%;
+      width: 18%;
       margin-top:  35px;
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+      background-color: #f9b462;
 }
+
+.game-board {
+      background-image: url(./images/klemen-vrankar-FPSrDsq5i20-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 35px;
+      padding-bottom: 30px;
+}
+
+
+/* .headers {
+      display: flex;
+      flex-direction: row;
+} */
+
+.s, .t, .e, .m {
+      /* grid-column: 1/2; */
+      background-color: #f9b462;
+      color: navy;
+      height: 100px;
+      padding-top: 20px;
+      width: 98%;
+      font-weight: bolder;
+      font-size: 85px;
+      border-radius: 8px;
+      /* position: fixed; */
+}t
+
+/* .t {
+      /* grid-column: 2/3; */
+       /* background-color: #faad50;
+       color: navy;
+       font-size: 45px;
+       font-weight: bold;
+       width: 30%;
+       height: 100px;
+       padding-top: 20px;
+} */
+
+/* .e {
+      /* grid-column: 3/4; */
+       /* background-color: #faad50;
+       color: navy;
+       font-size: 45px;
+       font-weight: bold;
+       width: 30%;
+       height: 100px;
+       padding-top: 20px;
+} */ 
+/* 
+.m {
+      /* grid-column: 4/5; */
+      /* font-size: 45px;
+      font-weight: bold;
+      background-color: #faad50;
+      color: navy;
+      width: 30%;
+      height: 100px;
+      padding-top:  20px;
+} */ 
 
 .question-text {
       padding: 8px;
-      /* background-color: #88D1F1; */
-      /* background-image: linear-gradient(to bottom right, #83eaf1, #63a4ff); */
-      background-image: url(https://media.istockphoto.com/photos/abstract-gold-swirl-holiday-christmas-background-picture-id1171702605?b=1&k=20&m=1171702605&s=170667a&w=0&h=_rewhrEnSmynxB93rq0AUK-fznNK4fSwTI0iQjQx6Uw=);
+      background-color: #f9b462;
+      font-size: 15px;
+      /* background-image: linear-gradient(to bottom right, #83eaf1, #63a4ff);  */
+      /* background-image: url(https://media.istockphoto.com/photos/abstract-gold-swirl-holiday-christmas-background-picture-id1171702605?b=1&k=20&m=1171702605&s=170667a&w=0&h=_rewhrEnSmynxB93rq0AUK-fznNK4fSwTI0iQjQx6Uw=); */
       border-radius: 8px;
       border-top:  3px solid navy;
       border-left: 3px solid navy;
@@ -49,7 +111,7 @@ button:hover {
       padding-top:  0px;
       padding-left: 0px;
       padding-bottom: 10px;
-      width: 40%;
+      width: 60%;
       background-color: navy;
       color: white;
       border-top-right-radius: 50px;
@@ -58,9 +120,21 @@ button:hover {
 
 .question{
       background-color: navy;
+      font-size: 18px;
       color: white;
+      padding:  10px 5px 0px 5px;
+      height: 155px;
 }
 
 .option-btns {
       background-color: navy;
 }
+
+.tallies {
+      position: absolute;
+      right: 80px;
+     /* display: flex;
+     flex-direction: row;
+     align-items: flex-end; */
+}
+
