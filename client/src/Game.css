@@ -28,14 +28,14 @@ button:hover {
       margin-top:  35px;
       margin-left: 10%;
       margin-right: 10%;
-      background-color: #f9b462;
+      height: auto;
 }
 
 .game-board {
       background-image: url(./images/klemen-vrankar-FPSrDsq5i20-unsplash.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      padding-top: 35px;
+      padding-top: 50px;
       padding-bottom: 30px;
 }
 
@@ -56,40 +56,8 @@ button:hover {
       font-size: 85px;
       border-radius: 8px;
       /* position: fixed; */
-}t
+}
 
-/* .t {
-      /* grid-column: 2/3; */
-       /* background-color: #faad50;
-       color: navy;
-       font-size: 45px;
-       font-weight: bold;
-       width: 30%;
-       height: 100px;
-       padding-top: 20px;
-} */
-
-/* .e {
-      /* grid-column: 3/4; */
-       /* background-color: #faad50;
-       color: navy;
-       font-size: 45px;
-       font-weight: bold;
-       width: 30%;
-       height: 100px;
-       padding-top: 20px;
-} */ 
-/* 
-.m {
-      /* grid-column: 4/5; */
-      /* font-size: 45px;
-      font-weight: bold;
-      background-color: #faad50;
-      color: navy;
-      width: 30%;
-      height: 100px;
-      padding-top:  20px;
-} */ 
 
 .question-text {
       padding: 8px;
@@ -132,7 +100,9 @@ button:hover {
 
 .tallies {
       position: absolute;
-      right: 80px;
+      right: 120px;
+      margin-top: -40px;
+      margin-bottom:  30px;
      /* display: flex;
      flex-direction: row;
      align-items: flex-end; */
