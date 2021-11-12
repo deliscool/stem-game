@@ -50,14 +50,19 @@ const handleCorrectAnswerClicks = (option) => {
 // }
 
 return (
+<div>
+    <div className="score-box">
+        <Score score={playerScore}/>
+    </div>
 
      <div className="game-board">
+        
         <div className="tallies">
-            <div className="score-box">
+            {/* <div className="score-box">
                 <Score 
                     score={playerScore}
                 />
-            </div>
+            </div> */}
             {/* <div className="badge-box"> */}
                 {/* <BadgeBox
                     badges={playerBadges}
@@ -94,6 +99,7 @@ return (
         ))}
            </div>
     </div>
+</div>
 )}
 
 export default Game;
