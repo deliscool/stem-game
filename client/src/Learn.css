@@ -32,3 +32,16 @@ body {
   width: 1000px;
   margin: auto;
 }
+
+.extensions {
+  display: flex;
+  flex-direction: column;
+  background-color: #9fb8ef;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
+
+.extensions div {
+  padding: 15px;
+}
