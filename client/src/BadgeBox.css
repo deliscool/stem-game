@@ -1,0 +1,17 @@
+.badge-icon {
+    color: #f7951f;
+    size: 75px;
+}
+
+.badge-display {
+    font-size: 25px;
+    font-weight: bold;
+    color: navy;
+    background-color: #f4f9f7;
+    border: 10px double navy;
+    border-radius: 8px;
+    width: 180px;
+    height:  75px;
+    padding:  5px 10px 5px 10px;
+
+}

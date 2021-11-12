@@ -1,12 +1,13 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
+import React from "react"
 import gameData from "./gameQuestions"
 
 export default function LearnFront() {
-    const [isFlipped, setIsFlipped] = useState("false")
+    // const [isFlipped, setIsFlipped] = useState("false")
 
     function handleClick(e) {
          e.preventDefault();
-         setIsFlipped(prevState => ({ isFlipped: !prevState.isFlipped }));
+        //  setIsFlipped(prevState => ({ isFlipped: !prevState.isFlipped }));
        }
     return (
         <div className="learn-container">
