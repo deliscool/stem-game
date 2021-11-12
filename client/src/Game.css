@@ -24,7 +24,7 @@ button:hover {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 7px;
-      width: 18%;
+      /* width: 18%; */
       margin-top:  35px;
       margin-left: 10%;
       margin-right: 10%;
@@ -76,6 +76,7 @@ button:hover {
       border-bottom: 10px solid navy;
       margin-top: 18px;
       padding: 8px;
+      height: 360px;
 }
 
 .category-title {

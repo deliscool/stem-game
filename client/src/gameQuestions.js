@@ -6,7 +6,7 @@ const gameQuestions = [
         options: [
             { answer: "Who is Mary Jackson?", isCorrect: false },
             { answer: "Who is Dorothy Vaughan?", isCorrect: false },
-            { answer: "Who is Katherine Johnson?", isCorrect: true }
+            { answer: "Who is Patricia Bath?", isCorrect: true }
         ],
         isFlipped: false 
     },

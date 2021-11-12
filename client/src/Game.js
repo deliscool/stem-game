@@ -15,7 +15,7 @@ import Score from "./Score"
 //try react-card-flip
 
 function Game() {
-
+let [isFlipped, setIsFlipped] = useState(false)
 const [playerScore, setPlayerScore] = useState(0)
 
 // const [playerBadges, setPlayerBadges] = useState([])
@@ -56,7 +56,6 @@ return (
     </div>
 
      <div className="game-board">
-        
         <div className="tallies">
             {/* <div className="score-box">
                 <Score 
@@ -79,22 +78,24 @@ return (
 
             {gameData.map((game, index)=>(
                 <div>
-                
-
-                <div className="question-text" key={game._id} index={index}>
-                    <h3 className="category-title">{game.category}</h3>
-                    <h3 className="question">{game.question}</h3>
-    
-                {game.options.map((option, index)=>(
-                    <div key={index} className="answer-btns">
-                            <h3>{option.isCorrect}</h3>
-                        <button id={index} className="option-btns" onClick={()=>handleClick(index, option)}>{option.answer}</button>
-                       
-                    </div>
+                    <div className="question-text" key={game._id} index={index}>
+                        {!isFlipped &&
+                            <h3 className="category-title" onClick={() => setIsFlipped(!isFlipped)}>{game.category}</h3>
+                        } ;
+                        {isFlipped &&
+                        <div>
+                            <h3 className="question" onClick={() => setIsFlipped(!isFlipped)}>{game.question}</h3>
             
-                ))}
-        </div>
-     </div>
+                        {game.options.map((option, index)=>(
+                            <div key={index} className="answer-btns">
+                                <h3>{option.isCorrect}</h3>
+                                <button id={index} className="option-btns" onClick={()=>handleClick(index, option)}>{option.answer}</button>
+                        
+                            </div>
+                
+                        ))}</div>}
+                    </div>
+                </div>
 
         ))}
            </div>
