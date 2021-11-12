@@ -12,9 +12,10 @@ body {
 
 .learn-box {
     display: flex;
+    flex-direction: column;
     border: 5px solid orange;
     margin: 10px;
-    height: 350px;
+    height: 400px;
     align-items: center;
     justify-content: center;
 }

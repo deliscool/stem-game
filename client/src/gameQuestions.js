@@ -7,7 +7,8 @@ const gameQuestions = [
             { answer: "Who is Mary Jackson?", isCorrect: false },
             { answer: "Who is Dorothy Vaughan?", isCorrect: false },
             { answer: "Who is Katherine Johnson?", isCorrect: true }
-        ]
+        ],
+        isFlipped: false 
     },
     {
         _id: 2,

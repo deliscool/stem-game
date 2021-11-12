@@ -1,33 +1,26 @@
 import React, { useState } from "react"
 import gameData from "./gameQuestions"
-import ReactCardFlip from 'react-card-flip'
-import LearnFront from "./LearnFront"
-import LearnBack from "./LearnBack"
+
 import "./Learn.css"
+import Card from "./Card"
 
 
 
 function Learn() {
-    const [isFlipped, setIsFlipped] = useState("false")
-
-   function handleClick(e) {
-        e.preventDefault();
-        setIsFlipped(prevState => ({ isFlipped: !prevState.isFlipped }));
-      }
 
     console.log(gameData)
     return (
         <div>
-            <ReactCardFlip isFlipped={isFlipped}>
-                <LearnFront >
-                </LearnFront>
-                <LearnBack >
-                </LearnBack>
-            </ReactCardFlip>
-           
-
+                
+            <div className="learn-container">
+                
+                {gameData.map((game, index) => {
+                    return <Card Card={Card} game={game} index={index} key={gameData._id}/>
+                })}
+            </div>
+                
         </div>
     )
-    }
+}
 
 export default Learn;
