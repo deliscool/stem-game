@@ -58,11 +58,11 @@ return (
                     score={playerScore}
                 />
             </div>
-            <div className="badge-box">
+            {/* <div className="badge-box"> */}
                 {/* <BadgeBox
                     badges={playerBadges}
                 /> */}
-            </div>
+            {/* </div> */}
         </div>
 
          <div className="game-card-container">

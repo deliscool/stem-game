@@ -4,9 +4,12 @@
     font-weight: bold;
     color: navy;
     background-color: #f9b462;
-    border:  10px solid navy;
+    border-top: 3px solid navy;
+    border-left: 3px solid navy;
+    border-right: 7px solid navy;
+    border-bottom: 10px solid navy;
     border-radius: 8px;
-    margin-top: 25px;
-    width:  300px;
+    /* margin-top: -25px; */
+    width:  450px;
    
 }

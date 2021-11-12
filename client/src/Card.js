@@ -10,7 +10,7 @@ function Card(props) {
     return (
     <div>
         {!isFlipped && 
-           <div className="learn-box" index={index} onClick={() => setIsFlipped(!isFlipped)}>
+           <div className="learn-box" index={index} key={key} onClick={() => setIsFlipped(!isFlipped)}>
                 {game.options.filter(item => {
                     return item.isCorrect
                     }).map((option, index)=>(
@@ -21,7 +21,7 @@ function Card(props) {
             </div> }
         ;
         {isFlipped && 
-            <div className="learn-box" key={index} index={index} onClick={() => setIsFlipped(!isFlipped)} >
+            <div className="learn-box" key={key} index={index} onClick={() => setIsFlipped(!isFlipped)} >
                 <p>{game.question}</p>
             </div>
         }
