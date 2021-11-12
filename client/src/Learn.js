@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+// import React, { useState } from "react"
+import React from "react"
 import gameData from "./gameQuestions"
-
 import "./Learn.css"
 import Card from "./Card"
 
@@ -8,9 +8,11 @@ import Card from "./Card"
 
 function Learn() {
 
+
     console.log(gameData)
     return (
         <div>
+
                 
             <div className="learn-container">
                 
@@ -18,7 +20,6 @@ function Learn() {
                     return <Card Card={Card} game={game} index={index} key={gameData._id}/>
                 })}
             </div>
-                
         </div>
     )
 }
