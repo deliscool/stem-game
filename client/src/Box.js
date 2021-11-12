@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import img from "./images/question.png"
 
 function Card(props) {
     let [isFlipped, setIsFlipped] = useState(false)
@@ -13,7 +14,10 @@ function Card(props) {
         <div>
         <div className="question-text" key={game._id} index={index}>
             {!isFlipped &&
-                <h3 className="category-title" onClick={() => setIsFlipped(!isFlipped)}>{game.category}</h3>
+            <div onClick={() => setIsFlipped(!isFlipped)}>
+                <h3 className="category-title">{game.category}</h3>
+                <h1 className="question-mark">?</h1>
+            </div>
             } ;
             {isFlipped &&
                 <div>

@@ -3,6 +3,7 @@ import React from "react"
 import gameData from "./gameQuestions"
 import "./Learn.css"
 import Card from "./Card"
+import img from "./images/2.png"
 
 
 
@@ -13,7 +14,7 @@ function Learn() {
     return (
         <div>
 
-                
+            <img src={img} className="how-to-img"></img>
             <div className="learn-container">
                 
                 {gameData.map((game, index) => {
