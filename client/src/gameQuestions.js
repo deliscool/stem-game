@@ -4,8 +4,8 @@ const gameQuestions = [
         category: "Science",
         question: "She was the inventor of laser cataract surgery",
         options: [
-            { answer: "Who is Mary Jackson?", isCorrect: false },
-            { answer: "Who is Dorothy Vaughan?", isCorrect: false },
+            { answer: "Who is Dr. Virginia Apgar?", isCorrect: false },
+            { answer: "Who is Dr. Jane C. Wright", isCorrect: false },
             { answer: "Who is Patricia Bath?", isCorrect: true }
         ],
         isFlipped: false 

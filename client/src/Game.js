@@ -4,23 +4,47 @@ import "./Game.css"
 import Score from "./Score"
 import Box from "./Box"
 // import Modal from "./Modal"
+// import {GlobalStyle} from "./globalStyles"
+// import styled from "styled-components"
+
+// const Container = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh; 
+//     padding:  16px 32px;
+//     border-radius: 4px;
+//     border: none;
+//     background: #141414;
+//     color: #fff;
+//     font-size: 24px;
+//     cursor: pointer;
+// `
+
+// const Button = styled.button`
+//     min-width: 100px;
+// `
+// import Modal from "./Modal"
 // import scienceBadge from "./images/chem-unsplash"
 // import techBadge from "./images/tech-unsplash"
 // import engBadge from "./images/robot-unsplash"
 // import mathBadge from "./images/math-unsplash"
-
-
 // import BadgeBox from "./BadgeBox"
 
 //try react-modal for alerts
-//try react-card-flip
 
 function Game() {
 const [playerScore, setPlayerScore] = useState(0)
 
+// const [showModal, setShowModal] = useState(false)
+
 // const [playerBadges, setPlayerBadges] = useState([])
 
 // const icons = [scienceBadge, techBadge, engBadge, mathBadge]
+
+// const handleModal = () => {
+//     setShowModal(prev => !prev)
+// }
 
 
 const handleClick = (index, option) => {
@@ -55,6 +79,8 @@ return (
         <Score score={playerScore}/>
     </div>
 
+
+
      <div className="game-board">
         <div className="tallies">
             {/* <div className="score-box">
@@ -74,7 +100,7 @@ return (
                 <div className="s">S</div>
                 <div className="t">T</div>
                 <div className="e">E</div>
-                <div className="t">M</div>
+                <div className="m">M</div>
 
             {gameData.map((game, index)=> {
                 return <Box Box={Box} game={game} index={index} handleClick={handleClick}/>
@@ -82,6 +108,15 @@ return (
             })}
            </div>
     </div>
+
+          {/* <Container>
+                <Button onClick={openModal}>It's a Modal!</Button>
+                <Modal 
+                    showModal={showModal}
+                    setShowModal={setShowModal}
+                />
+                <GlobalStyle/>
+         </Container> */}
 </div>
 )}
 
@@ -89,21 +124,4 @@ export default Game;
 
 
 
-// import React from "react"
-// import {Icon} from "@iconify/react"
-// import locationIcon from "@iconify/icons-mdi/dog-side"
 
-
-
-// const LocationMarker = ({lat, lng, onClick})=> {
-//     return(
-              
-//         <div className="location-marker" onClick={onClick}>
-//             <Icon 
-//             icon={locationIcon} 
-//             className="location-icon"
-//             />
-//         </div>
-//     )}
-
-// export default 
