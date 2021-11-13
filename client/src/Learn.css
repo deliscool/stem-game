@@ -1,26 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@200&display=swap");
 
 body {
-      font-family: "Raleway", sans-serif;
-      text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 .learn-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .learn-box {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid orange;
-    margin: 10px;
-    height: 400px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid orange;
+  margin: 10px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  background: #f0aaa3;
 }
 
 .learn-box p {
-    font-size: 27px;
-    width: 80%;
+  font-size: 27px;
+  width: 80%;
+}
+
+.how-to-img {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: auto;
+}
+
+.extensions {
+  display: flex;
+  flex-direction: column;
+  background-color: #9fb8ef;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
+
+.extensions div {
+  padding: 15px;
 }
